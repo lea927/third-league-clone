@@ -1,3 +1,29 @@
+/* Declare color palette using CSS variables */
+:root {
+  /* Primary colors */
+  --primary-color: rgb(0, 3, 18);
+  --secondary-color: rgb(79, 90, 240);
+  --accent-color: rgb(255, 255, 255);
+
+  /* Neutral colors */
+  --background-color: var(--primary-color);
+  --text-color: rgb(183, 183, 183);
+  /* --border-color: #dcdcdc; */
+
+  /* Additional colors */
+  --link-color: var(--text-color);
+
+  /* Font sizes/weight */
+  --font-size-regular: 20px;
+  --font-size-small: 12px;
+  --font-weight-regular: 400;
+
+  --font-size-h1: 62px;
+  --font-size-h2: 48px;
+  --font-size-h4: 26px;
+  --font-weight-large: 400;
+}
+
 /* Basic CSS Reset */
 *,
 *::before,
@@ -8,8 +34,27 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
   line-height: 1.5;
+  font-size: var(--font-size-regular);
+  font-weight: var(--font-weight-regular);
+}
+
+h1, h2, h4 {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: var(--font-weight-large);
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+}
+
+h4 {
+  font-size: var(--font-size-h4);
 }
 
 ol, ul {
@@ -34,7 +79,7 @@ table {
 button, input, textarea {
   border: none;
   background: none;
-  font-family: inherit;
+  font-family: sans-serif;
   font-size: inherit;
   outline: none;
 }
