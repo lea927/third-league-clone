@@ -30,6 +30,13 @@
   /* Font family */
   --font-family-primary: "Helvetica Neue", sans-serif;
   --font-family-secondary: "Archivo Black", sans-serif;
+
+  /* Padding */
+  --gap-xs: 2px;
+  --gap-sm: 4px;
+  --gap-md: 6px;
+  --gap-lg: 8px;
+  --gap-xl: 10px;
 }
 
 /* Basic CSS Reset */
@@ -173,6 +180,29 @@ h1 span:first-of-type,
 }
 
 .join-stats-wrapper p {
-  font-size: var(--font-size-small);
-  gap: 5px;
+  font-size: var(--font-size-x-small);
+  gap: var(--gap-sm);
+}
+  /* cta */
+.cta-wrapper {
+  font-size: var(--font-size-xx-small);
+  align-items: center;
+  gap: var(--gap-xl);
+}
+
+.cta-wrapper a {
+  background-color: var(--secondary-color);
+  padding: 14px 18px;
+  border-radius: 10px;
+  gap: var(--gap-lg);
+}
+
+.cta-wrapper a:first-of-type {
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
+}
+
+.cta-wrapper a:last-of-type {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
 }
