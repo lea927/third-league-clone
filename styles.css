@@ -87,5 +87,23 @@ button, input, textarea {
 /* Optional: Set a default background color */
 
 html {
-  background-color: #fff;
+  background-color: var(--background-color);
+}
+/* ==================================================== */
+/* Section by section design */
+
+/* Generic css declarations */
+.flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+
+/* Header */
+header {
+  height: 80px;
+  padding: 20px;
 }
