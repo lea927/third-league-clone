@@ -17,7 +17,8 @@
   /* Typography */
   /* Font sizes/weight */
   --font-size-regular: 20px;
-  --font-size-x-small: 12px;
+  --font-size-xx-small: 12px;
+  --font-size-x-small: 14px;
   --font-size-small: 16px;
   --font-weight-regular: 400;
 
@@ -110,6 +111,10 @@ html {
   justify-content: center;
 }
 
+.align-items-center {
+  align-items: center;
+}
+
 /* Header */
 header {
   height: 80px;
@@ -126,13 +131,13 @@ header {
     /* countdown day  */
 .countdown-timer p:first-of-type {
   font-family: var(--font-family-secondary);
-  font-size: var(--font-size-x-small);
+  font-size: var(--font-size-xx-small);
   font-weight: var(--font-weight-large);
 }
 
 .countdown-timer p:last-of-type {
   color: var(--gray-medium);
-  font-size: var(--font-size-x-small);
+  font-size: var(--font-size-xx-small);
 }
 
 .countdown-timer p:first-of-type > span:first-of-type,
@@ -158,4 +163,16 @@ h1 {
 h1 span:first-of-type,
 .hero-subtitle span:first-of-type {
   display: block;
+}
+
+  /* join stats */
+.join-stats-wrapper img {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}
+
+.join-stats-wrapper p {
+  font-size: var(--font-size-small);
+  gap: 5px;
 }
