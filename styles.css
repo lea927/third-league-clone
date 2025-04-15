@@ -32,12 +32,6 @@
   --font-family-secondary: "Archivo Black", sans-serif;
 
   /* Padding */
-  --padding-xs: 2px;
-  --padding-sm: 4px;
-  --padding-md: 6px;
-  --padding-lg: 8px;
-  --padding-xl: 10px;
-
   --padding-2: 2px;
   --padding-4: 4px;
   --padding-6: 6px;
@@ -48,6 +42,18 @@
   --padding-16: 16px;
   --padding-18: 18px;
   --padding-20: 20px;
+
+  /* Margin */
+  --margin-2: 2px;
+  --margin-4: 4px;
+  --margin-6: 6px;
+  --margin-8: 8px;
+  --margin-10: 10px;
+  --margin-12: 12px;
+  --margin-14: 14px;
+  --margin-16: 16px;
+  --margin-18: 18px;
+  --margin-20: 20px;
 }
 
 /* Basic CSS Reset */
@@ -152,7 +158,7 @@ header {
     /* countdown day  */
 .countdown-timer p:first-of-type {
   font-family: var(--font-family-secondary);
-  font-size: var(--font-size-xx-small);
+  font-size: var(--font-size-x-small);
   font-weight: var(--font-weight-large);
 }
 
@@ -160,6 +166,7 @@ header {
   color: var(--gray-medium);
   font-size: var(--font-size-xx-small);
   line-height: var(--font-size-x-small);
+  margin-bottom: var(--margin-18);
 }
 
 .countdown-timer p:first-of-type > span:first-of-type,
@@ -174,7 +181,7 @@ header {
     /* hero main text, subtitle  */
 .hero {
   gap: var(--padding-20);
-  height: 70vh;
+  height: 60vh;
   text-align: center;
 }
 
@@ -198,11 +205,11 @@ h1 span:first-of-type,
 
 .join-stats-wrapper {
   gap: var(--padding-4);
+  margin: var(--margin-18) 0;
 }
 
 .join-stats-wrapper p {
   font-size: var(--font-size-x-small);
-  gap: var(--padding-4);
 }
   /* cta */
 .cta-wrapper {
@@ -225,4 +232,11 @@ h1 span:first-of-type,
 .cta-wrapper a:last-of-type {
   background-color: var(--secondary-color);
   color: var(--primary-color);
+}
+
+/* Model Photo */
+.photo img {
+  max-width: 100%;
+  height: auto;
+  width: 900px;
 }
