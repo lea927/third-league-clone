@@ -159,6 +159,7 @@ header {
 .countdown-timer p:last-of-type {
   color: var(--gray-medium);
   font-size: var(--font-size-xx-small);
+  line-height: var(--font-size-x-small);
 }
 
 .countdown-timer p:first-of-type > span:first-of-type,
@@ -173,7 +174,7 @@ header {
     /* hero main text, subtitle  */
 .hero {
   gap: var(--padding-20);
-  height: 100vh;
+  height: 70vh;
   text-align: center;
 }
 
@@ -193,6 +194,10 @@ h1 span:first-of-type,
   border-radius: 50%;
   height: 30px;
   width: 30px;
+}
+
+.join-stats-wrapper {
+  gap: var(--padding-4);
 }
 
 .join-stats-wrapper p {
