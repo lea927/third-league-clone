@@ -42,14 +42,16 @@
 
 body {
   font-family: var(--font-family-primary);
-  line-height: 1.5;
+  line-height: 24px;
   font-size: var(--font-size-regular);
   font-weight: var(--font-weight-regular);
+  color: var(--text-color);
 }
 
 h1, h2, h4 {
   font-family: var(--font-family-secondary);
   font-weight: var(--font-weight-large);
+  color: var(--secondary-color);
 }
 
 h1 {
@@ -140,4 +142,20 @@ header {
 
 .countdown-timer p:first-of-type > span:nth-of-type(even) {
   color: var(--gray-medium);
+}
+
+    /* hero main text, subtitle  */
+h1 {
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  line-height: 1;
+}
+
+.hero-info-wrapper {
+  text-align: center;
+}
+
+h1 span:first-of-type,
+.hero-subtitle span:first-of-type {
+  display: block;
 }
