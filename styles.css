@@ -254,6 +254,15 @@ h1 span:first-of-type,
 }
 
   /* Bento/Feature tiles */
+.features-main-title {
+  margin-bottom: calc(var(--margin-20)*2);
+}
+
+.bento {
+  margin-top: calc(var(--margin-20)*3);
+  padding: calc(var(--padding-20)*3) var(--padding-20);
+}
+
 .bento-tiles {
   padding: calc(var(--padding-20)*3) 0;
 }
