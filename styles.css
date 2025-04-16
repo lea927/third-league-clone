@@ -253,12 +253,28 @@ h1 span:first-of-type,
   width: 60%;
 }
 
-.bento-tile p {
-  font-size: var(--font-size-x-small);
+  /* Bento/Feature tiles */
+.bento-tiles {
+  padding: calc(var(--padding-20)*3) 0;
+}
+
+.bento-tiles > div {
+  width: 90%;
 }
 
 .bento-tile {
   height: 400px;
   background-color: #191919;
   border-radius: 50px;
+  flex: 1
+}
+
+.bento-tile p {
+  font-size: var(--font-size-x-small);
+}
+
+.bento-tiles,
+.first-row-bento-tiles,
+.second-row-bento-tiles {
+  gap: var(--padding-20);
 }
