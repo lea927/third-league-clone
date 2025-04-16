@@ -77,14 +77,18 @@ h1, h2, h4 {
   font-family: var(--font-family-secondary);
   font-weight: var(--font-weight-large);
   color: var(--secondary-color);
+  line-height: 1;
+  text-transform: uppercase;
 }
 
 h1 {
   font-size: var(--font-size-h1);
+  letter-spacing: -5px;
 }
 
 h2 {
   font-size: var(--font-size-h2);
+  letter-spacing: -4px;
 }
 
 h4 {
@@ -185,12 +189,6 @@ header {
   text-align: center;
 }
 
-h1 {
-  text-transform: uppercase;
-  letter-spacing: -5px;
-  line-height: 1;
-}
-
 h1 span:first-of-type,
 .hero-subtitle span:first-of-type {
   display: block;
@@ -239,4 +237,28 @@ h1 span:first-of-type,
   max-width: 100%;
   height: auto;
   width: 900px;
+}
+
+/* Features */
+.features-main-title span span {
+  color: var(--accent-color);
+}
+
+.features-main-title > span {
+  display: block;
+}
+
+.features-description {
+  text-align: center;
+  width: 60%;
+}
+
+.bento-tile p {
+  font-size: var(--font-size-x-small);
+}
+
+.bento-tile {
+  height: 400px;
+  background-color: #191919;
+  border-radius: 50px;
 }
