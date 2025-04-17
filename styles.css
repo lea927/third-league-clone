@@ -147,6 +147,12 @@ html {
   flex-direction: column;
 }
 
+.small-people-icon {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}
+
 /* Header */
 header {
   height: 80px;
@@ -195,12 +201,6 @@ h1 span:first-of-type,
 }
 
   /* join stats */
-.join-stats-wrapper img {
-  border-radius: 50%;
-  height: 30px;
-  width: 30px;
-}
-
 .join-stats-wrapper {
   gap: var(--padding-4);
   margin: var(--margin-18) 0;
@@ -310,4 +310,47 @@ h1 span:first-of-type,
 
 .bento-image-wrapper.season-based-leagues-image > img {
   height: 250px !important;
+}
+
+  /* Bento/Feature tiles */
+.newsletter {
+  background: var(--accent-color);
+  height: 100vh;
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+.newsletter p,
+.newsletter-form input[type="email"],
+.newsletter-form input[type="submit"] {
+  font-size: var(--font-size-xx-small);
+}
+
+.newsletter-main-title span,
+.newsletter-subtitle span {
+  display: block;
+}
+
+.newsletter-subtitle span {
+  line-height: 16.8px;
+}
+
+.newsletter-form input[type="email"] {
+  background-color: var(--secondary-color);
+  padding: var(--padding-14) var(--padding-18);
+  border-radius: 10px;
+  font-family: var(--font-family-secondary);
+  font-weight: var(--font-weight-regular);
+}
+
+.newsletter-form input[type="submit"] {
+  background-color: var(--primary-color);
+  padding: var(--padding-14) var(--padding-18);
+  border-radius: 10px;
+  font-family: var(--font-family-primary);
+  color: var(--secondary-color)
+}
+
+.newsletter-icons-wrapper img {
+  border: 2px solid var(--secondary-color);
 }
