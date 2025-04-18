@@ -384,3 +384,47 @@ h1 span:first-of-type,
 .newsletter-form button {
   color: var(--secondary-color);
 }
+
+.newsletter-form button:hover {
+  cursor: pointer;
+}
+
+/* Features Expanded */
+.features-expanded {
+  padding: 60px 0;
+}
+  /* Texts */
+.features-expanded-main-texts-wrapper {
+  text-align: center;
+  padding: 50px;
+}
+
+.features-expanded-main-texts-wrapper h2 {
+  margin-bottom: calc(var(--margin-20)*2);
+}
+
+.features-expanded-main-texts-wrapper > h2 span {
+  color: var(--accent-color);
+}
+
+.features-expanded-main-texts-wrapper > p span {
+  display: block;
+}
+  /* Expanded Feature tiles */
+.feature-tiles-wrapper {
+  padding: 60px 200px;
+  justify-content: flex-start;
+  gap: 200px;
+}
+
+.expanded-feature-tile {
+  font-size: var(--font-size-x-small);
+}
+
+.expanded-feature-tile > h4 {
+  margin-bottom: 16px;
+}
+  /* Image */
+.expanded-feature-photo {
+  height: 477px;
+}
