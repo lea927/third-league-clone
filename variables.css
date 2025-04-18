@@ -1,0 +1,72 @@
+@import 'styles.css';
+@import 'variables.css';
+@import 'reset.css';
+
+/* CSS variables */
+:root {
+  /* Primary colors */
+  --primary-color: rgb(0, 3, 18);
+  --secondary-color: rgb(255, 255, 255);
+  --accent-color: rgb(79, 90, 240);
+  --accent-color-secondary: rgb(99, 107, 234);
+  --gray-dark: #252525;
+  --gray-medium: #99999980;
+  --gray-medium-light: #b7b7b7;
+  --gray: #b7b7b7;
+
+  /* Neutral colors */
+  --background-color: var(--primary-color);
+  --text-color: rgb(183, 183, 183);
+
+  /* Additional colors */
+  --link-color: var(--text-color);
+
+  /* Typography */
+  /* Font sizes/weight */
+  --font-size-regular: 20px;
+  --font-size-xx-small: 12px;
+  --font-size-x-small: 14px;
+  --font-size-small: 16px;
+  --font-weight-regular: 400;
+
+  --font-size-h1: 62px;
+  --font-size-h2: 48px;
+  --font-size-h4: 26px;
+  --font-weight-large: 500;
+
+  /* Font family */
+  --font-family-primary: "Helvetica Neue", sans-serif;
+  --font-family-secondary: "Archivo Black", sans-serif;
+
+  /* line height */
+  --line-height-small-texts: 16.8px;
+
+  /* Spacing */
+  /* Padding */
+  --padding-2: 2px;
+  --padding-4: 4px;
+  --padding-6: 6px;
+  --padding-8: 8px;
+  --padding-10: 10px;
+  --padding-12: 12px;
+  --padding-14: 14px;
+  --padding-16: 16px;
+  --padding-18: 18px;
+  --padding-20: 20px;
+
+  /* Margin */
+  --margin-2: 2px;
+  --margin-4: 4px;
+  --margin-6: 6px;
+  --margin-8: 8px;
+  --margin-10: 10px;
+  --margin-12: 12px;
+  --margin-14: 14px;
+  --margin-16: 16px;
+  --margin-18: 18px;
+  --margin-20: 20px;
+
+  /* Border-radius */
+  --border-radius-card: 50px;
+  --border-radius-button: 10px;
+}
