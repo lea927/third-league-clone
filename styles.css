@@ -5,7 +5,9 @@
   --secondary-color: rgb(255, 255, 255);
   --accent-color: rgb(79, 90, 240);
   --accent-color-secondary: rgb(99, 107, 234);
+  --gray-dark: #252525;
   --gray-medium: #99999980;
+  --gray-medium-light: #b7b7b7;
   --gray: #b7b7b7;
 
   /* Neutral colors */
@@ -471,4 +473,35 @@ h1 span:first-of-type,
 
 .desktop-tile > img {
   height: 160px;
+}
+
+/* FAQs */
+.faqs {
+  padding: 100px;
+  font-size: var(--font-size-xx-small);
+}
+
+  /* Title text, Discord */
+.faq-title > h2 span,
+.discord > h4 span {
+  display: block;
+}
+
+.faq-title,
+.discord {
+  background: var(--accent-color);
+  width: fit-content;
+  padding: 20px 70px;
+  text-align: center;
+}
+
+/* Question tiles */
+.question-tile {
+  border-radius: 30px;
+  background-color: var(--gray-dark);
+  padding: 32px 24px;
+}
+
+.question-tile h4 {
+  color: var(--gray-medium-light);
 }
