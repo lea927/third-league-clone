@@ -370,6 +370,7 @@ h1 span:first-of-type,
 
 .newsletter-icons-wrapper img {
   border: 2px solid var(--secondary-color);
+  margin-left: -8px;
 }
     /* Form */
 .newsletter-form {
