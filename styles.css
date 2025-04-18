@@ -1,4 +1,4 @@
-/* Declare color palette using CSS variables */
+/* CSS variables */
 :root {
   /* Primary colors */
   --primary-color: rgb(0, 3, 18);
@@ -54,6 +54,10 @@
   --margin-16: 16px;
   --margin-18: 18px;
   --margin-20: 20px;
+
+  /* Border-radius */
+  --border-radius-card: 50px;
+  --border-radius-button: 10px;
 }
 
 /* Basic CSS Reset */
@@ -153,6 +157,16 @@ html {
   width: 30px;
 }
 
+.input-button-base, .form-control-shared {
+  background-color: var(--primary-color);
+  padding: var(--padding-14) var(--padding-18);
+  border-radius: var(--border-radius-button);
+  gap: var(--padding-8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Header */
 header {
   height: 80px;
@@ -217,9 +231,6 @@ h1 span:first-of-type,
 
 .cta-wrapper a {
   background-color: var(--secondary-color);
-  padding: var(--padding-14) var(--padding-18);
-  border-radius: 10px;
-  gap: var(--padding-8);
 }
 
 .cta-wrapper a:first-of-type {
@@ -274,7 +285,7 @@ h1 span:first-of-type,
 .bento-tile {
   height: 400px;
   background-color: #191919;
-  border-radius: 50px;
+  border-radius: var(--border-radius-card);
   flex: 1;
   padding: 32px 23px;
   display: flex;
@@ -366,18 +377,10 @@ h1 span:first-of-type,
 
 .newsletter-form input[type="email"] {
   background-color: var(--secondary-color);
-  padding: var(--padding-14) var(--padding-18);
-  border-radius: 10px;
   font-family: var(--font-family-secondary);
   font-weight: var(--font-weight-regular);
 }
 
 .newsletter-form button {
-  background-color: var(--primary-color);
-  padding: var(--padding-14) var(--padding-18);
-  border-radius: 10px;
-  font-family: var(--font-family-primary);
   color: var(--secondary-color);
-  gap: var(--padding-8);
-  justify-content: center;
 }
