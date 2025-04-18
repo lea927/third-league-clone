@@ -34,6 +34,10 @@
   --font-family-primary: "Helvetica Neue", sans-serif;
   --font-family-secondary: "Archivo Black", sans-serif;
 
+  /*  */
+  --line-height-small-texts: 16.8px;
+
+  /* Spacing */
   /* Padding */
   --padding-2: 2px;
   --padding-4: 4px;
@@ -161,7 +165,6 @@ html {
 }
 
 .input-button-base, .form-control-shared {
-  background-color: var(--primary-color);
   padding: var(--padding-14) var(--padding-18);
   border-radius: var(--border-radius-button);
   gap: var(--padding-8);
@@ -386,6 +389,7 @@ h1 span:first-of-type,
 
 .newsletter-form button {
   color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
 
 .newsletter-form button:hover {
@@ -427,6 +431,13 @@ h1 span:first-of-type,
 .expanded-feature-tile > h4 {
   margin-bottom: 16px;
 }
+
+.expanded-feature-tile > p {
+  line-height: var(--line-height-small-texts);
+}
+.expanded-feature-tile > h4 {
+  margin-bottom: 16px;
+}
   /* Image */
 .expanded-feature-photo {
   height: 477px;
@@ -442,7 +453,7 @@ h1 span:first-of-type,
 
 .desktop p {
   font-size: var(--font-size-x-small);
-  line-height: 16.8px;
+  line-height: var(--line-height-small-texts);
 }
 
   /* desktop text */
@@ -478,10 +489,15 @@ h1 span:first-of-type,
 /* FAQs */
 .faqs {
   padding: 100px;
-  font-size: var(--font-size-xx-small);
+  font-size: var(--font-size-x-small);
 }
 
   /* Title text, Discord */
+.faqs {
+  gap: 80px;
+  padding: 100px;
+}
+
 .faq-title > h2 span,
 .discord > h4 span {
   display: block;
@@ -496,6 +512,10 @@ h1 span:first-of-type,
 }
 
 /* Question tiles */
+.question-tiles-wrapper {
+  gap: 40px;
+}
+
 .question-tile {
   border-radius: 30px;
   background-color: var(--gray-dark);
@@ -504,4 +524,18 @@ h1 span:first-of-type,
 
 .question-tile h4 {
   color: var(--gray-medium-light);
+  margin-bottom: 18px;
+}
+
+.question-tile p {
+  line-height: var(--line-height-small-texts);
+}
+
+.discord a {
+  margin-top: 20px;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 20px;
 }
