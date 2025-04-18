@@ -539,3 +539,29 @@ h1 span:first-of-type,
   margin: 0 auto;
   margin-top: 20px;
 }
+
+footer {
+  background-color: var(--gray-dark);
+  text-align: center;
+  padding: 50px 0;
+}
+
+footer > :first-child {
+  color: var(--gray-medium-light);
+}
+
+footer > :first-child,
+footer > :nth-child(2) {
+  margin-bottom: 40px;
+}
+
+footer > h4 span {
+  display: block;
+}
+
+footer > :last-child {
+  color: #393939;
+  text-decoration: underline;
+  letter-spacing: -0.16px;
+  font-size: var(--font-size-small);
+}
